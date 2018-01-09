@@ -1,7 +1,11 @@
 $(document).ready( function(){
-	//oculta la flecha del navbar
+	/*
+	*oculta la flecha del navbar
+	*/
 	 $('.js-back').hide();
-	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
+	 /*
+	*La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
+	*/
 	renderHighlightedRecipes(recipesArray);
 	printNews();
 	renderActivities(activitiesArray);
@@ -70,8 +74,9 @@ function renderActivity(recipe) {
 		'</span>' +
 		'<div class="bg-image" style="background-image: url(' + recipe.image + ');"></div> </a>');
 }
-
-//muestra una noticia en la sección news
+/*
+*muestra una noticia en la sección news
+*/
 function printNews() {
 	$('#news').html('NUEVAS RECETAS');
 }

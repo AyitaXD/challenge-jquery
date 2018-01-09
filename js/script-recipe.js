@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  //oculta el icono menu del navbar de recipe
+  /*
+  *oculta el icono menu del navbar de recipe
+  */
   $('.js-menu').hide();
   console.log('Etapa 7');
   addMake();
@@ -7,10 +9,10 @@ $(document).ready(function() {
 });
 
 /*funcion que agrega la clase make al div page
-*agrega la clase active a show-recipe y se la quita show-make
-*/
+ *agrega la clase active a show-recipe y se la quita show-make
+ */
 function addMake() {
-  $('.js-show-recipe').click(function () {
+  $('.js-show-recipe').click(function() {
     $('#page').addClass('make');
     $('.js-show-recipe').addClass('active');
     $('.js-show-make').removeClass('active');
@@ -18,8 +20,8 @@ function addMake() {
 
 }
 /*funcion que quita la clase make al div page recipe
-*agrega la clase active a show-make y se la quita show-recipe
-*/
+ *agrega la clase active a show-make y se la quita show-recipe
+ */
 function removeMake() {
   $('.js-show-make').click(function() {
     $('#page').removeClass('make');
